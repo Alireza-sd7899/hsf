@@ -3,7 +3,7 @@ title: Strategic Thinking Skills Report
 shorttitle: Data science, Alireza Sadeghi
 subtitle: Hochschule Fresenius
 author:
-  - name: Alireza Sadeghi 400793389
+  - name: Alireza Sadeghi400793389
     corresponding: true
     orcid: 0000-0000-0000-0001
     affiliations:
@@ -34,7 +34,7 @@ format:
 
 # Section guideline
 
-### Section 1 (Introduction)
+## Section 1 (Introduction)
 
 Introduces the overall goal of the replication, focusing on reproducing key visualizations and analyses related to gender differences in cognitive and behavioral scores. Explains the motivation for using the apaquarto style and setting up the R environment for reproducible research.
 
@@ -52,7 +52,7 @@ The study included male and female participants assessed on multiple cognitive m
 
 ------------------------------------------------------------------------
 
-### Section 4 (Measures)
+## Section 4 (Measures)
 
 Cognitive performance was evaluated using four key measures: BI score, HOR score, Eyes Test score, and IST Score. Each measure was analyzed across different performance levels, with comparisons made between males and females to assess differences in mean scores and variability.
 
@@ -68,7 +68,7 @@ Documents the replication of the Stata-style bar plot illustrating incremental c
 
 Outlines fitting a linear regression model with interaction terms to assess the effects of gender, measure, and level on mean scores. Discusses the rationale for including interaction effects and reviewing model summaries for interpretation.
 
-### Section 7(Pull request)
+###  Section 7(Pull request)
 
 This section will be explained about the procedure of Pull request.
 
@@ -84,13 +84,13 @@ Candidly reports any challenges encountered during replication, such as manual d
 
 Summarizes the successful replication of key visualizations and statistical models, highlighting insights into gender differences across cognitive and behavioral measures. Suggests potential extensions or improvements for future research.
 
-------------------------------------------------------------------------
+---
 
 ### Section 10 (Limitation and future directions)
 
 Reflects on the Limitations and decisions we could have make
 
-### Section 11 (workflow and teamwork)
+## Section 11 (workflow and teamwork)
 
 Team's work and the presentation files.
 
@@ -114,17 +114,17 @@ During an in-class review session, the professor encouraged me to take the repli
 
 The tables and graphs generated in this project present a clear and structured picture of how males and females differ in their performance across four cognitive measures: **BI score**, **HOR score**, **Eyes Test score**, and **IST Score**. Each of these measures is presented with mean scores for three different performance tiers (either 0/1/2+ or Bottom/Middle/Top third), along with upper and lower bounds, which represent confidence intervals.
 
-By separating the visualizations by gender, it becomes easier to observe the within-gender differences across test types and also to draw broad comparisons between genders. The bar plots help visualize the average score for each group, while the error bars provide a sense of statistical uncertainty ,showing the range within which the true score is likely to fall.
+By separating the visualizations by gender, it becomes easier to observe the **within-gender differences across test types** and also to draw **broad comparisons between genders**. The bar plots help visualize the average score for each group, while the error bars provide a sense of statistical uncertainty ,showing the range within which the true score is likely to fall.
 
-For the male dataset, the graphs show a fairly consistent pattern: in all four measures, the mean scores increase across performance tiers. For example, in the BI score and IST Score, we see a clear upward trend as we move from the lowest to the highest level, with relatively narrow confidence intervals. This suggests that among men, those in higher performance brackets tend to score much higher than those in lower ones, and that the data supporting this trend is fairly robust.
+For the **male dataset**, the graphs show a fairly consistent pattern: in all four measures, the mean scores increase across performance tiers. For example, in the BI score and IST Score, we see a clear upward trend as we move from the lowest to the highest level, with relatively narrow confidence intervals. This suggests that among men, those in higher performance brackets tend to score much higher than those in lower ones, and that the data supporting this trend is fairly robust.
 
-In the female graphs, the same general upward trend is present, but the scores are noticeably lower than those of the male groups across almost all tests and levels. The difference is particularly visible in the BI and HOR scores, where the top-tier female scores are still lower than the middle-tier male scores. This pattern might suggest a systematic difference in how males and females perform on these tests or could reflect underlying sampling, demographic, or psychometric factors not captured in this dataset.
+In the **female graphs**, the same general upward trend is present, but the scores are noticeably lower than those of the male groups across almost all tests and levels. The difference is particularly visible in the BI and HOR scores, where the top-tier female scores are still lower than the middle-tier male scores. This pattern might suggest a systematic difference in how males and females perform on these tests or could reflect underlying sampling, demographic, or psychometric factors not captured in this dataset.
 
-The confidence intervals are also informative. In most cases, the error bars for males are relatively tight, indicating higher precision, while the female error bars are slightly wider , suggesting more variability or possibly a smaller sample size. However, the intervals generally do not overlap between the lowest and highest tiers, which strengthens the conclusion that there are significant differences in performance within each gender group.
+The **confidence intervals** are also informative. In most cases, the error bars for males are relatively tight, indicating higher precision, while the female error bars are slightly wider , suggesting more variability or possibly a smaller sample size. However, the intervals generally do not overlap between the lowest and highest tiers, which strengthens the conclusion that there are significant differences in performance within each gender group.
 
 In short, the graphs show that:
 
-Cognitive scores increase across tiers for both males and females.Males generally score higher on average across all four tests.The data is consistent enough (based on the narrow intervals) to support these trends,There is a noticeable gender gap in cognitive performance that holds across multiple measures . These visualizations make the differences tangible and easy to interpret. They are especially useful for highlighting both relative improvement within each gender and absolute gaps between genders, giving a richer view than raw numbers alone.
+Cognitive scores increase across tiers for both males and females.Males generally score higher on average across all four tests.The data is consistent enough (based on the narrow intervals) to support these trends,There is a noticeable gender gap in cognitive performance that holds across multiple measures . These visualizations make the differences tangible and easy to interpret. They are especially useful for highlighting **both relative improvement within each gender** and **absolute gaps between genders**, giving a richer view than raw numbers alone.
 
 ### 2.Methodology
 
@@ -253,7 +253,7 @@ ggplot(r2_data, aes(x = model, y = r_squared)) +
 
 ```
 
-------------------------------------------------------------------------
+---
 
 **Data Preparation: Fig 9 (Alireza)**\
 A synthetic dataset was created in R to explore how average scores across different cognitive and behavioral measures vary by gender and categorized performance levels. The dataset included four key measures: **BI score**, **HOR score**, **Eyes Test score**, and **IST Score**. For each measure, values were provided for both males and females across three categorical levels. These levels varied depending on the measure:
@@ -393,7 +393,7 @@ To contribute to the main repository and submit my replication work, I created a
 
 ### **8.Challenges Encountered**
 
-Although the dataset was relatively clean and the goal was clearly defined, several challenges emerged throughout the project , ranging from technical hurdles in R to workflow and GitHub integration. These challenges not only tested my coding skills but also taught valuable lessons in debugging, planning, and patience
+Although the dataset was relatively clean and the goal was clearly defined, several challenges emerged throughout the project — ranging from technical hurdles in R to workflow and GitHub integration. These challenges not only tested my coding skills but also taught valuable lessons in debugging, planning, and patience
 
 **Data Formatting and Consistency**
 
@@ -441,7 +441,7 @@ As a beginner, RStudio itself presented a few unexpected hurdles:
 
 **Slow Rendering**: When attempting to include multiple plots in one output (e.g., `gridExtra` or `patchwork`), the rendering was noticeably slower, especially with many facets and high-resolution settings.
 
-**Session Restarts**: On a few occasions, RStudio crashed while plotting or rendering requiring me to restart the session and reload all packages.
+**Session Restarts**: On a few occasions, RStudio crashed while plotting or rendering — requiring me to restart the session and reload all packages.
 
 ------------------------------------------------------------------------
 
@@ -491,7 +491,7 @@ If given the opportunity to start this project again, I would make several impro
 
 ### What I Could Not Solve
 
-Although I was able to complete the main goals of the project namely, visualizing the gender-based differences in cognitive scores using R and producing clear plots with confidence intervals , there were a few things I was not able to solve, either due to time limitations, technical hurdles, or lack of experience.
+Although I was able to complete the main goals of the project — namely, visualizing the gender-based differences in cognitive scores using R and producing clear plots with confidence intervals — there were a few things I was not able to solve, either due to time limitations, technical hurdles, or lack of experience.
 
 One of the earliest obstacles I faced was not being able to access the original dataset used in the seminar, known as *slp*, which was provided in Stata (.dta) format. I tried multiple approaches to import this into R, including using the `haven`[@wickham2015] package and online converters, but each attempt produced errors or incomplete tables. I spent a significant amount of time troubleshooting this issue ,exploring encoding settings, variable formats, and compatibility between Stata versions ,but none of the solutions worked in time. Unfortunately, by the time I realized I couldn’t resolve this on my own, it was too late in the process to ask for support from the professor or switch to a new data source. As a result, I had to manually reconstruct a simplified dataset in R based on the reported values for the female subsample, which limited the depth of my analysis.
 
@@ -510,10 +510,6 @@ All of these unsolved problems were frustrating at the time, but I see them now 
 Here is the presentation link:
 
 https://alireza-sd7899.github.io/testc/
-
-Here is the Handout link:
-
-<https://hubchev.github.io/ds/>
 
 ------------------------------------------------------------------------
 
@@ -537,7 +533,7 @@ I affirm that this report was authored solely by me. All analysis, code, and vis
 
 -   [x] The submission contains the Quatro file of the presentation.
 
-    ------------------------------------------------------------------------
+    ---
 
 -   [x] The submission contains the HTML file of the report.
 
@@ -547,7 +543,7 @@ I affirm that this report was authored solely by me. All analysis, code, and vis
 
 -   [x] The submission contains the PDF file of the presentation.
 
-    ------------------------------------------------------------------------
+    ---
 
 -   [x] The title page of presentation and the report contain personal details.
 
@@ -555,7 +551,7 @@ I affirm that this report was authored solely by me. All analysis, code, and vis
 
 -   [x] The presentation and report contain a bibliograghy,created using BibTex with APA citation style.
 
-    ------------------------------------------------------------------------
+    ---
 
 -   [x] The report contains R code that proofs the students expertise in coding.
 
@@ -563,7 +559,7 @@ I affirm that this report was authored solely by me. All analysis, code, and vis
 
 -   [x] All significant resources used in the report and R code development.
 
-    ------------------------------------------------------------------------
+    ---
 
 -   [x] The filled out Affidavit.
 

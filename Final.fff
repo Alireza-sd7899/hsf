@@ -1,0 +1,30 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[H]
+
+\caption{\label{fig-gender-barplots-1}Cognitive Measures by Gender,
+Level, and Score Type}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{Final_files/figure-pdf/fig-gender-barplots-1.pdf}}
+
+}
+
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+[H]
+
+\caption{\label{fig-gender-barplots-2}Cognitive Measures by Gender,
+Level, and Score Type}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{Final_files/figure-pdf/fig-gender-barplots-2.pdf}}
+
+}
+
+\end{figure*}
